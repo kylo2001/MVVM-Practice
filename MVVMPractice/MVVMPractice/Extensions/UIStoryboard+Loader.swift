@@ -11,6 +11,7 @@ import UIKit
 fileprivate enum Storyboard : String {
     case main = "Main"
     case gameScoreboardEditor = "GameScoreboardEditor"
+    case gameProducer = "GameProducer"
 }
 
 fileprivate extension UIStoryboard {
@@ -19,10 +20,6 @@ fileprivate extension UIStoryboard {
         return load(from: .main, identifier: identifier)
     }
     
-    // add convenience methods for other storyboards here ...
-    
-    // ... or use the main loading method directly when instantiating view controller
-    // from a specific storyboard
     static func load(from storyboard: Storyboard, identifier: String) -> UIViewController {
         let uiStoryboard = UIStoryboard(name: storyboard.rawValue, bundle: nil)
         return uiStoryboard.instantiateViewController(withIdentifier: identifier)
@@ -34,5 +31,9 @@ fileprivate extension UIStoryboard {
 extension UIStoryboard {
     static func loadGameScoreboardEditorViewController() -> GameScoreboardEditorViewController {
         load(from: .gameScoreboardEditor, identifier: "GameScoreboardEditorViewController") as! GameScoreboardEditorViewController
+    }
+    
+    static func loadGameProducerViewController() -> GameProducerViewController {
+        load(from: .gameProducer, identifier: "GameProducerViewController") as! GameProducerViewController
     }
 }
