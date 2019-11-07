@@ -69,24 +69,26 @@ class GameScoreboardEditorViewController: UIViewController {
         self.homeTeamNameLabel.text = viewModel.homeTeam
         self.awayTeamNameLabel.text = viewModel.awayTeam
         
-        viewModel.score.bindAndFire { [unowned self] in self.scoreLabel.text = $0 }
-        viewModel.time.bindAndFire { [unowned self] in self.timeLabel.text = $0 }
+        viewModel.score.bindAndFire { [weak self] in self?.scoreLabel.text = $0 }
+        viewModel.time.bindAndFire { [weak self] in self?.timeLabel.text = $0 }
         
-        viewModel.isFinished.bindAndFire { [unowned self] in
+        viewModel.isFinished.bindAndFire { [weak self] in
             if $0 {
-                self.homePlayer1View.isHidden = true
-                self.homePlayer2View.isHidden = true
-                self.homePlayer3View.isHidden = true
+                self?.homePlayer1View.isHidden = true
+                self?.homePlayer2View.isHidden = true
+                self?.homePlayer3View.isHidden = true
                 
-                self.awayPlayer1View.isHidden = true
-                self.awayPlayer2View.isHidden = true
-                self.awayPlayer3View.isHidden = true
+                self?.awayPlayer1View.isHidden = true
+                self?.awayPlayer2View.isHidden = true
+                self?.awayPlayer3View.isHidden = true
+                
+                viewModel.togglePause()
             }
         }
         
-        viewModel.isPaused.bindAndFire { [unowned self] in
+        viewModel.isPaused.bindAndFire { [weak self] in
             let title = $0 ? "Start" : "Pause"
-            self.pauseButton.setTitle(title, for: .normal)
+            self?.pauseButton.setTitle(title, for: .normal)
         }
         
         homePlayer1View.viewModel = viewModel.homePlayers[0]
