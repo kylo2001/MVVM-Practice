@@ -17,7 +17,8 @@ enum PlayerInGameMove {
 }
 
 enum GameNotifications {
-    static let GameScoreDidChangeNotification = "GameScoreDidChangeNotification"
+    static let GameScoreDidChange = "GameScoreDidChange"
+    
 }
 
 class Game: NSObject {
@@ -109,7 +110,7 @@ class Game: NSObject {
             isFinished = true
         }
         
-        NotificationCenter.default.post(name: Notification.Name(rawValue: GameNotifications.GameScoreDidChangeNotification), object: self)
+        NotificationCenter.default.post(name: Notification.Name(rawValue: GameNotifications.GameScoreDidChange), object: self)
     }
     
     

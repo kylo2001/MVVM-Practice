@@ -22,8 +22,8 @@ class GameScoreboardEditorViewModelFromGame: NSObject, GameScoreboardEditorViewM
     
     // MARK: GameScoreboardEditorViewModel protocol
     
-    var homeTeam: String
-    var awayTeam: String
+    let homeTeam: String
+    let awayTeam: String
     
     let time: Dynamic<String>
     let score: Dynamic<String>
@@ -101,7 +101,7 @@ class GameScoreboardEditorViewModelFromGame: NSObject, GameScoreboardEditorViewM
     fileprivate func subscribeToNotifications() {
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(gameScoreDidChangeNotification(_:)),
-                                               name: NSNotification.Name(rawValue: GameNotifications.GameScoreDidChangeNotification),
+                                               name: NSNotification.Name(rawValue: GameNotifications.GameScoreDidChange),
                                                object: game)
     }
 
