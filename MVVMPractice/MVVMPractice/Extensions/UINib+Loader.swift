@@ -8,7 +8,7 @@
 
 import UIKit
 
-fileprivate extension UINib {
+extension UINib {
     
     static func nib(named nibName: String) -> UINib {
         return UINib(nibName: nibName, bundle: nil)

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="W7X-yB-Xfm">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game Producer View Controller-->
+        <scene sceneID="fHS-kb-izy">
+            <objects>
+                <viewController storyboardIdentifier="GameProducerViewController" id="W7X-yB-Xfm" customClass="GameProducerViewController" customModule="MVVMPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fpp-Cu-Px8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Vv-QN-TIV" customClass="CreateTeamInfomationView" customModule="MVVMPractice" customModuleProvider="target">
+                                <rect key="frame" x="20" y="442" width="374" height="250"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="yTc-Xh-wxj"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="z6l-qz-6PA">
+                                <rect key="frame" x="40" y="802" width="334" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOE-Md-hsd">
+                                        <rect key="frame" x="0.0" y="0.0" width="142" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <state key="normal" title="취소">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTouchCancelButton:" destination="W7X-yB-Xfm" eventType="touchUpInside" id="1Ne-s6-Rwg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fj-mj-Hxz">
+                                        <rect key="frame" x="192" y="0.0" width="142" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <state key="normal" title="생성">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTouchDoneButton:" destination="W7X-yB-Xfm" eventType="touchUpInside" id="L6D-ub-9a7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="kM0-aA-vee"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cvn-es-LZp">
+                                <rect key="frame" x="20" y="74" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Away" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARU-yB-lkw">
+                                <rect key="frame" x="20" y="398" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qa5-iL-7Hn" customClass="CreateTeamInfomationView" customModule="MVVMPractice" customModuleProvider="target">
+                                <rect key="frame" x="20" y="118" width="374" height="250"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="erU-Dy-bpL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Qa5-iL-7Hn" firstAttribute="leading" secondItem="UAY-H6-Bro" secondAttribute="leading" constant="20" id="C3C-kS-cOe"/>
+                            <constraint firstItem="UAY-H6-Bro" firstAttribute="trailing" secondItem="ARU-yB-lkw" secondAttribute="trailing" constant="20" id="CE6-Ta-glg"/>
+                            <constraint firstItem="UAY-H6-Bro" firstAttribute="trailing" secondItem="Qa5-iL-7Hn" secondAttribute="trailing" constant="20" id="M1o-kh-vQa"/>
+                            <constraint firstItem="Cvn-es-LZp" firstAttribute="leading" secondItem="UAY-H6-Bro" secondAttribute="leading" constant="20" id="M3X-Ix-g7d"/>
+                            <constraint firstItem="Qa5-iL-7Hn" firstAttribute="top" secondItem="Cvn-es-LZp" secondAttribute="bottom" constant="8" id="US4-fa-79s"/>
+                            <constraint firstItem="z6l-qz-6PA" firstAttribute="bottom" secondItem="UAY-H6-Bro" secondAttribute="bottom" id="e7c-LZ-C3P"/>
+                            <constraint firstItem="UAY-H6-Bro" firstAttribute="trailing" secondItem="z6l-qz-6PA" secondAttribute="trailing" constant="40" id="h0Q-gJ-ZXk"/>
+                            <constraint firstItem="z6l-qz-6PA" firstAttribute="leading" secondItem="UAY-H6-Bro" secondAttribute="leading" constant="40" id="hgJ-rR-g2g"/>
+                            <constraint firstItem="UAY-H6-Bro" firstAttribute="trailing" secondItem="4Vv-QN-TIV" secondAttribute="trailing" constant="20" id="iE4-7x-kza"/>
+                            <constraint firstItem="ARU-yB-lkw" firstAttribute="top" secondItem="Qa5-iL-7Hn" secondAttribute="bottom" constant="30" id="ifm-WN-ze9"/>
+                            <constraint firstItem="Cvn-es-LZp" firstAttribute="top" secondItem="UAY-H6-Bro" secondAttribute="top" constant="30" id="jQ3-ro-yS7"/>
+                            <constraint firstItem="ARU-yB-lkw" firstAttribute="leading" secondItem="UAY-H6-Bro" secondAttribute="leading" constant="20" id="ouZ-4c-aEY"/>
+                            <constraint firstItem="UAY-H6-Bro" firstAttribute="trailing" secondItem="Cvn-es-LZp" secondAttribute="trailing" constant="20" id="sQl-p7-mCP"/>
+                            <constraint firstItem="4Vv-QN-TIV" firstAttribute="top" secondItem="ARU-yB-lkw" secondAttribute="bottom" constant="8" id="sT0-jg-7Wb"/>
+                            <constraint firstItem="4Vv-QN-TIV" firstAttribute="leading" secondItem="UAY-H6-Bro" secondAttribute="leading" constant="20" id="vvC-hH-zGX"/>
+                            <constraint firstItem="4Vv-QN-TIV" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="z6l-qz-6PA" secondAttribute="top" constant="-52" id="wn8-k4-7HC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UAY-H6-Bro"/>
+                    </view>
+                    <connections>
+                        <outlet property="awayTeamProducerView" destination="Qa5-iL-7Hn" id="gLw-AC-9zi"/>
+                        <outlet property="homeTeamProducerView" destination="4Vv-QN-TIV" id="Jpr-L4-rei"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JOH-5s-oUg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="395.6521739130435" y="-246.42857142857142"/>
+        </scene>
+    </scenes>
+</document>

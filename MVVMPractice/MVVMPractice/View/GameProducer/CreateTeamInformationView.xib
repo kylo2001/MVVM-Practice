@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateTeamInfomationView" customModule="MVVMPractice" customModuleProvider="target">
+            <connections>
+                <outlet property="addPlayerButton" destination="s1V-cw-maW" id="jUt-MA-a7w"/>
+                <outlet property="player1NameTextField" destination="JMd-fr-srs" id="9Aq-xh-tg8"/>
+                <outlet property="player2NameTextField" destination="sFT-4a-jc4" id="HZW-DM-3vJ"/>
+                <outlet property="player3NameTextField" destination="amf-vl-lYy" id="PYP-NE-fPv"/>
+                <outlet property="teamNameTextField" destination="g2I-lF-eVd" id="c1x-lg-y5r"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="314"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Players" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F38-Fe-Wyn">
+                    <rect key="frame" x="0.0" y="151" width="79" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please name your team" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g2I-lF-eVd">
+                    <rect key="frame" x="0.0" y="53" width="414" height="83"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="f8C-Wt-azS"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" tag="1" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter the first player's name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JMd-fr-srs">
+                    <rect key="frame" x="0.0" y="196" width="414" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Hq5-qe-5mC"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1V-cw-maW">
+                    <rect key="frame" x="79" y="155" width="335" height="22"/>
+                    <state key="normal" image="plus" catalog="system"/>
+                </button>
+                <textField opaque="NO" tag="2" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter the second player's name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sFT-4a-jc4">
+                    <rect key="frame" x="0.0" y="238" width="414" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="HEY-fu-Mnu"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" tag="3" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter the third player's name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="amf-vl-lYy">
+                    <rect key="frame" x="0.0" y="280" width="414" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="oyI-Jt-eOb"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdo-EP-Nrd">
+                    <rect key="frame" x="0.0" y="8" width="414" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="sFT-4a-jc4" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="3qB-bE-kIX"/>
+                <constraint firstItem="g2I-lF-eVd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Epd-00-woW"/>
+                <constraint firstItem="F38-Fe-Wyn" firstAttribute="top" secondItem="g2I-lF-eVd" secondAttribute="bottom" constant="15" id="Ffh-ZW-w94"/>
+                <constraint firstItem="xdo-EP-Nrd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="GZ4-fC-OZ8"/>
+                <constraint firstItem="sFT-4a-jc4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="HJL-iE-vjq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="amf-vl-lYy" secondAttribute="bottom" id="HQG-RX-ZNz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="s1V-cw-maW" secondAttribute="trailing" id="HxA-XE-Mqo"/>
+                <constraint firstItem="sFT-4a-jc4" firstAttribute="top" secondItem="JMd-fr-srs" secondAttribute="bottom" constant="8" id="L99-3Z-aeo"/>
+                <constraint firstItem="g2I-lF-eVd" firstAttribute="top" secondItem="xdo-EP-Nrd" secondAttribute="bottom" constant="15" id="Njg-nJ-iwV"/>
+                <constraint firstItem="amf-vl-lYy" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Qt4-1l-uPo"/>
+                <constraint firstItem="JMd-fr-srs" firstAttribute="top" secondItem="F38-Fe-Wyn" secondAttribute="bottom" constant="15" id="R4o-8J-fIs"/>
+                <constraint firstItem="xdo-EP-Nrd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="SXO-E3-5fo"/>
+                <constraint firstItem="s1V-cw-maW" firstAttribute="leading" secondItem="F38-Fe-Wyn" secondAttribute="trailing" id="YV3-Cr-fs6"/>
+                <constraint firstItem="JMd-fr-srs" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Yw5-1H-J5p"/>
+                <constraint firstItem="JMd-fr-srs" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="a20-fE-buz"/>
+                <constraint firstItem="amf-vl-lYy" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="b7r-ir-JTg"/>
+                <constraint firstItem="g2I-lF-eVd" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="jcy-ER-rOe"/>
+                <constraint firstItem="F38-Fe-Wyn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="mWM-Ia-RaZ"/>
+                <constraint firstItem="s1V-cw-maW" firstAttribute="centerY" secondItem="F38-Fe-Wyn" secondAttribute="centerY" id="te5-UO-msp"/>
+                <constraint firstItem="amf-vl-lYy" firstAttribute="top" secondItem="sFT-4a-jc4" secondAttribute="bottom" constant="8" id="x91-b6-kgT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="xdo-EP-Nrd" secondAttribute="trailing" id="zFL-qS-cWP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="157.97101449275362" y="212.94642857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="plus" catalog="system" width="64" height="56"/>
+    </resources>
+</document>

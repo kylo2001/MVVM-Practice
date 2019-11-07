@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="apD-Rm-taF">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
@@ -22,15 +22,15 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gnr-XZ-71n" userLabel="Home Player View">
                                 <rect key="frame" x="20" y="44" width="374" height="343"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LiP-Z8-Bh8" userLabel="Plyr1 Home" customClass="PlayerScoreboardMoveEditorView" customModule="MVVMSwiftExample" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LiP-Z8-Bh8" userLabel="Plyr1 Home" customClass="PlayerScoreboardMoveEditorView" customModule="MVVMPractice" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="147" width="374" height="60"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="82O-6N-CSe" userLabel="Plyr2 Home" customClass="PlayerScoreboardMoveEditorView" customModule="MVVMSwiftExample" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="82O-6N-CSe" userLabel="Plyr2 Home" customClass="PlayerScoreboardMoveEditorView" customModule="MVVMPractice" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="215" width="374" height="60"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="52h-gm-CpW" userLabel="Plyr3 Home" customClass="PlayerScoreboardMoveEditorView" customModule="MVVMSwiftExample" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="52h-gm-CpW" userLabel="Plyr3 Home" customClass="PlayerScoreboardMoveEditorView" customModule="MVVMPractice" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="283" width="374" height="60"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -56,18 +56,18 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i3X-iB-tNp" userLabel="Away Player View">
                                 <rect key="frame" x="20" y="509" width="374" height="333"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TbU-aY-cIb" userLabel="Plyr1 Away" customClass="PlayerScoreboardMoveEditorView" customModule="MVVMSwiftExample" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TbU-aY-cIb" userLabel="Plyr1 Away" customClass="PlayerScoreboardMoveEditorView" customModule="MVVMPractice" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="y4r-Tm-Nao"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xcF-WZ-OsW" userLabel="Plyr2 Away" customClass="PlayerScoreboardMoveEditorView" customModule="MVVMSwiftExample" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xcF-WZ-OsW" userLabel="Plyr2 Away" customClass="PlayerScoreboardMoveEditorView" customModule="MVVMPractice" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="68" width="374" height="60"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c1I-n6-W4P" userLabel="Plyr3 Away" customClass="PlayerScoreboardMoveEditorView" customModule="MVVMSwiftExample" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c1I-n6-W4P" userLabel="Plyr3 Away" customClass="PlayerScoreboardMoveEditorView" customModule="MVVMPractice" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="136" width="374" height="60"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
@@ -155,8 +155,8 @@
                                         <variation key="default">
                                             <mask key="constraints">
                                                 <exclude reference="6sZ-0o-BuC"/>
-                                                <exclude reference="uCD-Wr-ofv"/>
                                                 <exclude reference="WVg-Hd-Qd4"/>
+                                                <exclude reference="uCD-Wr-ofv"/>
                                             </mask>
                                         </variation>
                                     </view>
@@ -202,13 +202,13 @@
                         <viewLayoutGuide key="safeArea" id="O7E-xo-lOk"/>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="fl7-9f-YcT"/>
                                 <exclude reference="EPi-un-s38"/>
-                                <exclude reference="s66-HH-wSu"/>
-                                <exclude reference="lqe-kF-yY3"/>
-                                <exclude reference="tXD-Ec-Jj9"/>
                                 <exclude reference="VOq-Yt-5G7"/>
                                 <exclude reference="f6R-Od-xJr"/>
+                                <exclude reference="fl7-9f-YcT"/>
+                                <exclude reference="lqe-kF-yY3"/>
+                                <exclude reference="s66-HH-wSu"/>
+                                <exclude reference="tXD-Ec-Jj9"/>
                                 <exclude reference="A2E-0d-Rh0"/>
                                 <exclude reference="BE9-4s-dSK"/>
                             </mask>
